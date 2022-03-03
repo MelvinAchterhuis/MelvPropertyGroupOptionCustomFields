@@ -1,0 +1,28 @@
+{
+    "name": "melvinachterhuis/property-group-option-custom-fields-shopware6-plugin",
+    "description": "Custom fields for property group option",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Melvin Achterhuis"
+        }
+    ],
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "Melv\\PropertyGroupOptionCustomFields\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Melv\\PropertyGroupOptionCustomFields\\MelvPropertyGroupOptionCustomFields",
+        "label": {
+            "de-DE": "Property group option custom fields",
+            "en-GB": "Property group option custom fields"
+        },
+        "description": {
+            "de-DE": "Property group option custom fields",
+            "en-GB": "Property group option custom fields"
+        }
+    }
+}

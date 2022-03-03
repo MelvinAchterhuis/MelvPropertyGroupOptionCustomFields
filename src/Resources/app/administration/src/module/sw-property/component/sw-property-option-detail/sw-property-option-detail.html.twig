@@ -1,0 +1,17 @@
+{% block sw_property_option_detail_media %}
+    {% parent() %}
+
+    <sw-card
+        v-if="showCustomFields"
+        position-identifier="sw-property-option-detail"
+        :is-loading="isLoading"
+        :style="{ marginTop: '32px' }"
+    >
+        <sw-custom-field-set-renderer
+            :entity="currentOption"
+            :disabled="!allowEdit"
+            :sets="customFieldSets">
+        </sw-custom-field-set-renderer>
+    </sw-card>
+
+{% endblock %}
